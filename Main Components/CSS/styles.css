@@ -95,28 +95,29 @@ body {
         font-family: "Fraunces",sans-serif;
         font-weight: 700;
         color:var(--primary-color);
+        margin-left: 10px;
         float:left ;
     }
 
     .old-price {
-        float:right ;
+        float:right;
         color: var(--Dark-grayish-blue);
         text-decoration: line-through;
+        margin-left:-200px;
     }
 
     .cart-btn {
         background-color: var(--primary-color);
         border: none;
         color: white;
-        /*padding: 15px 32px;*/
         padding:20px 30px;
         border-radius:10px;
         text-align: center;
         display: inline-block;
         font-size: 16px;
-        margin: 4px 2px;
+        margin-top: 40px;
+        margin-bottom: 20px;
         cursor: pointer;
-
     }
 }
 
