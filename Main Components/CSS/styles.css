@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: teal;
+}
+
+:root {
+    --primary-color: hsl(158, 36%, 37%);
+    --secondary-color: hsl(30, 38%, 92%);
+
+    /*Nuetral colors*/
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    /* Optional: Add a background color to the main section */
+    padding: 0px;
+    /* Optional: Add padding around the main section */
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a shadow effect */
+    border-radius: 8px;
+    /* Optional: Add rounded corners */
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.heading {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 30px;
+    /*very big*/
+}
+
+
+/*Phone screen*/
+
+
+@media only screen and (max-width: 600px) {
+    .product-img {
+        content: url('/images/image-product-mobile.jpg');
+        width: 380px;
+        height: 300px;
+
+    }
+
+    #item-title {
+      color: var(--Dark-grayish-blue);
+      margin-left: -240px;
+      
+    }
+
+    .heading {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: -30px;
+    }
+
+    #heading-1{
+        margin-bottom:-15px;
+    }
+
+    .description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 350px;
+       
+    }
+
+    .p-main {
+        font-family: 'Montserrat';
+        color: var(--Dark-grayish-blue);
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .pricepoint {
+        font-size: 27px;
+        font-family: "Fraunces",sans-serif;
+        font-weight: 700;
+        color:var(--primary-color);
+        float:left ;
+    }
+
+    .old-price {
+        float:right ;
+        color: var(--Dark-grayish-blue);
+        text-decoration: line-through;
+    }
+
+    .cart-btn {
+        background-color: var(--primary-color);
+        border: none;
+        color: white;
+        /*padding: 15px 32px;*/
+        padding:20px 30px;
+        border-radius:10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+
+    }
+}
+
+/*Phone screen*/
