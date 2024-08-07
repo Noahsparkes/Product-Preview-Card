@@ -37,7 +37,6 @@ body {
 .product-img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
 }
 
 .heading {
@@ -55,13 +54,17 @@ body {
         content: url('/images/image-product-mobile.jpg');
         width: 380px;
         height: 300px;
+        border-top-right-radius:10px;
+        border-top-left-radius:10px;
 
     }
 
     #item-title {
       color: var(--Dark-grayish-blue);
       margin-left: -240px;
-      
+      letter-spacing: 4px;
+      font-size: 13px;
+       
     }
 
     .heading {
@@ -69,6 +72,7 @@ body {
         font-weight: 700;
         margin-top: -30px;
         margin-left: 10px;
+        padding-top: 8px;
     }
 
     #heading-1{
@@ -87,9 +91,14 @@ body {
     .p-main {
         font-family: 'Montserrat';
         color: var(--Dark-grayish-blue);
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 500;
         margin-left: 10px;
+        padding-bottom: 25px;
+    }
+
+    .p-main p {
+        margin-bottom: -4px;
     }
 
     .pricepoint {
@@ -97,7 +106,7 @@ body {
         font-family: "Fraunces",sans-serif;
         font-weight: 700;
         color:var(--primary-color);
-        margin-left: 10px;
+        margin-left: 15px;
         float:left ;
     }
 
@@ -105,14 +114,14 @@ body {
         float:right;
         color: var(--Dark-grayish-blue);
         text-decoration: line-through;
-        margin-left:-200px;
+        margin-left:-299px;
     }
 
     .cart-btn {
         background-color: var(--primary-color);
         border: none;
         color: white;
-        width: 250px;
+        width: 250px;/*250px*/
         padding: 15px;
         border-radius: 10px;
         text-align: center; 
