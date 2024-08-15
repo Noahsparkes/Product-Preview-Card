@@ -212,6 +212,7 @@ body {
         color: var(--Dark-grayish-blue);
         font-size: 15px;
         line-height: .5em;
+        padding-right: 50px;
         font-weight: 500;
         padding-top: 15px;
         margin-top: 10px;
