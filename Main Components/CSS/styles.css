@@ -68,6 +68,7 @@ body {
 
     .heading {
         font-size: 16px;
+        line-height:2rem;
         font-weight: 700;
         margin-top: -30px;
         margin-left: 10px;
@@ -91,6 +92,7 @@ body {
         font-family: 'Montserrat';
         color: var(--Dark-grayish-blue);
         font-size: 14px;
+        line-height: 1rem;
         font-weight: 500;
         margin-left: 10px;
         padding-bottom: 25px;
@@ -110,10 +112,12 @@ body {
     }
 
     .old-price {
-        float:right;
+        float:center;
         color: var(--Dark-grayish-blue);
         text-decoration: line-through;
-        margin-left:-299px;
+        padding-left: 155px;
+        padding-top: 5px;
+        
     }
 
     .cart-btn {
@@ -167,15 +171,17 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 85%;
+        width: 400px;
         height: 100%;
+       
         
     }
 
     .product-img {
         content: url(/images/image-product-desktop.jpg);
         width: 85%;
-        margin-right: 70px;
+       /* margin-right: 30px; /*was 70px*/
+        margin-left:-70px;
         height: auto;
         border-radius: 0; 
     }
@@ -192,7 +198,7 @@ body {
 
 
     .heading {
-        font-size: 20px;
+        font-size: 19px;
         line-height: .9em;
         font-weight: 700;
         padding-top: 10px;
@@ -207,8 +213,8 @@ body {
         font-size: 15px;
         line-height: .5em;
         font-weight: 500;
+        padding-top: 15px;
         margin-top: 10px;
-        margin-left: 30px; /*moving text to the right*/
         margin-bottom: 20px;
         text-align: left;
     }
@@ -219,7 +225,6 @@ body {
         font-weight: 700;
         color: var(--primary-color);
         margin-bottom: 10px;
-        margin-left: 25px;
         text-align: left;
     }
 
@@ -237,8 +242,8 @@ body {
     }
 
     .cart-btn {
+        background-color: var(--primary-color);
         width: 90%;
-        /*margin-left: 10px;*/
         margin-right: 70px;
         padding: 15px;
         border-radius: 10px;
@@ -247,6 +252,7 @@ body {
         color: white;
         border: none;
         font-size: 16px;
-        background-color: var(--primary-color);
+        cursor: pointer;
+       
     }
 }
